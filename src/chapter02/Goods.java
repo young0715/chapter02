@@ -51,4 +51,4 @@ public class Goods {
 //		오류 : title 지역변수 {} 빠져나오면 사라진다.
 //		System.out.println(title);
 	}
-}
+}  
