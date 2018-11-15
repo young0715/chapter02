@@ -1,4 +1,4 @@
-package ex03;
+package paint;
 
 public class Point {
 	private int x;
@@ -95,13 +95,12 @@ public class Point {
 	//method overloading
 	public void showInfo(boolean flag) {
 		if(flag == true)
-			System.out.println("점[x=" + x + ",y=" + y + "]을 그렸습니다.");
+			showInfo();
 		else
 			System.out.println("점[x=" + x + ",y=" + y + "]을 지웠습니다.");
 	}
 	
 	public void plusCount() {
 		count++;
-		System.out.println("plusCount : " + count);
 	}
 }

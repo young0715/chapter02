@@ -5,19 +5,6 @@ public class Goods {
 	private String name;
 	private int price;
 	
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setPrice(int price) {
-		this.price = price;
-	}
-	public int getPrice() {
-		return price;
-	}
-	
 	//생성자
 	public Goods(String name, int price) {
 		this.name = name;
@@ -35,5 +22,27 @@ public class Goods {
 
 	public Goods(int price) {
 		this("", price);
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public int getPrice() {
+		return price;
+	}
+	
+	public int calcDiscountPrice(float discountRate) {
+		int discountPrice = price - (int)(price * discountRate);
+		return discountPrice;
+	}
+	
+	public void showIndo() {
+		System.out.println("상품 : " + name + "  가격 : " + price);
 	}
 }

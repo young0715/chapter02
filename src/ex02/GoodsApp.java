@@ -18,6 +18,10 @@ public class GoodsApp {
 		//name을 String name에 변수를 담지 않았기 때문에, null값으로 return 됨
 		System.out.println("computer 상품 : " + computer.getName() + "  가격 : " + computer.getPrice());
 		
+		
+		Goods cup = new Goods("cup", 50000);
+		int discountCupPice = cup.calcDiscountPrice(0.3f);
+		System.out.println(discountCupPice);
 	}
 
 }

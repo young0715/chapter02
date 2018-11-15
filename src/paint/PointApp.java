@@ -1,4 +1,4 @@
-package ex03;
+package paint;
 
 import java.util.Scanner;
 
