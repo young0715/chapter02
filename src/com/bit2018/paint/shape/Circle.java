@@ -1,4 +1,4 @@
-package paint;
+package com.bit2018.paint.shape;
 
 public class Circle extends Shape {
 	private int x1;

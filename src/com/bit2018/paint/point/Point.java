@@ -1,4 +1,4 @@
-package paint;
+package com.bit2018.paint.point;
 
 public class Point {
 	private int x;

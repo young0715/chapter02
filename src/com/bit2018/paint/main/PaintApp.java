@@ -1,6 +1,13 @@
-package paint;
+package com.bit2018.paint.main;
 
-public class PointApp {
+import com.bit2018.paint.i.Drawable;
+import com.bit2018.paint.point.Point;
+import com.bit2018.paint.shape.Circle;
+import com.bit2018.paint.shape.Rect;
+import com.bit2018.paint.shape.Shape;
+import com.bit2018.paint.shape.Triangle;
+
+public class PaintApp {
 
 	public static void main(String[] args) {
 		/* scanner 이용한 생성자 활용
@@ -54,20 +61,27 @@ public class PointApp {
 		Shape s4 = c;
 		s4.setFillColor("red");
 	}
+	
+	private static void draw(Drawable drawable) {
+		drawable.draw();
+	}
 
 	private static void drawPoint(Point point) {
 		point.showInfo();
 	}
 	
-	private static void drawRect(Rect rect) {
-		rect.draw();
-	}
-	
-	private static void drawTriangle(Triangle triangel) {
-		triangel.draw();
-	}
-	
 	private static void drawShape(Shape shape) {
 		shape.draw();
 	}
+	
+	//Shape를 추상메소드로 바꿈으로써, @override 시켜서 draw를 호출함 
+//	private static void drawRect(Rect rect) {
+//		rect.draw();
+//	}
+//	
+//	private static void drawTriangle(Triangle triangel) {
+//		triangel.draw();
+//	}
+	
+	
 }

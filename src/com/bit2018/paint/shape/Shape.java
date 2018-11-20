@@ -1,4 +1,4 @@
-package paint;
+package com.bit2018.paint.shape;
 
 //abstract 추상 메소드
 public abstract class Shape {
