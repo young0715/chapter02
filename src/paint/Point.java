@@ -70,11 +70,12 @@ public class Point {
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;
+		System.out.println("Point int, int call");
 	}
 	
 	//생성자 overloading
 	//Default생성자를 사용하려면  생성자 새로 생성할 것.
-	public Point() {}
+	public Point() {System.out.println("Point call");}
 	
 	//생성자 overloading
 	public Point(int x) {
@@ -103,4 +104,6 @@ public class Point {
 	public void plusCount() {
 		count++;
 	}
+	
+	
 }
